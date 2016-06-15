@@ -33,9 +33,5 @@ module.exports = function (obj, opts) {
 		}
 	});
 
-	console.log(obj);
-	console.log(opts);
-	console.log(str);
-	console.log('_____________________\n');
 	return str;
 };
