@@ -1,0 +1,40 @@
+{
+  "name": "obj-to-property-string",
+  "version": "1.0.0",
+  "description": "Convert a JavaScript object's key:value pairs into a [customizable] delimited property string",
+  "license": "MIT",
+  "repository": "radiovisual/obj-to-property-string",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "string",
+    "property",
+    "delimited",
+    "customizable",
+    "custom",
+    "pairs",
+    "pair",
+    "value",
+    "key",
+    "object",
+    "JavaScript",
+    "convert"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.15.0"
+  }
+}
