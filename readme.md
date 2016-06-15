@@ -4,6 +4,9 @@
 
 [![Build Status](https://travis-ci.org/radiovisual/obj-to-property-string.svg?branch=master)](https://travis-ci.org/radiovisual/obj-to-property-string)
 
+Print out the `key:values` of any javascript object into a customizable property string. The default behavior is to print
+the objects key:value pairs into a string that can be used on any HTML object, but you can customize any of the property
+string's delimiters to get any custom string output you need.
 
 
 ## Install
@@ -18,8 +21,8 @@ $ npm install --save obj-to-property-string
 ```js
 const objToPropertyString = require('obj-to-property-string');
 
-objToPropertyString('unicorns');
-//=> 'unicorns & rainbows'
+objToPropertyString({class: 'customClass', style: 'display:none;', id: '1'});
+//=> 'class="customClass" style="display:none;" id="1"'
 ```
 
 
