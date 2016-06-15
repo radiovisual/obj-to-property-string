@@ -1,6 +1,10 @@
 import test from 'ava';
 import fn from './';
 
+test('empty object returns empty string', t => {
+	t.is(fn({}), '');
+});
+
 test('defaults to HTML property syntax', t => {
 	t.is(fn({class: 'customClass', style: 'display:none;', id: '1'}), 'class="customClass" style="display:none;" id="1"');
 });

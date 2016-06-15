@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function (obj, opts) {
-	if (typeof obj !== 'object') {
-		throw new TypeError('obj-to-property-string expected an object');
+	if (typeof obj !== 'object' && !Array.isArray(obj)) {
+		throw new TypeError('obj-to-property-string expects an object');
 	}
 
 	opts = opts || {};
