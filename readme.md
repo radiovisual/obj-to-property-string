@@ -7,7 +7,7 @@
 Print out the `key:values` of any javascript object into a customizable property string. The default behavior is to print
 the objects key:value pairs into a string that can be used on any HTML object, but you can customize any of the property
 string's delimiters to get any custom string output you need. See the examples below to explore the numerous options and 
-output formats.
+output formats. Pull requests welcome.
 
 
 ## Install
