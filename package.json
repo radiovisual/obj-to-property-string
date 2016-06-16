@@ -1,6 +1,6 @@
 {
   "name": "obj-to-property-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Convert a JavaScript object's key:value pairs into a [customizable] delimited property string",
   "license": "MIT",
   "repository": "radiovisual/obj-to-property-string",
