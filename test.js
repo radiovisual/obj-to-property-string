@@ -1,3 +1,4 @@
+/* eslint-disable object-property-newline */
 import test from 'ava';
 import fn from './';
 
@@ -22,7 +23,7 @@ test('quoteValues: false', t => {
 });
 
 test('quoteString: false', t => {
-	t.is(fn({foo: 'bar', baz: 'bet'}, {quoteString: '\''}), 'foo=\'bar\' baz=\'bet\''); // eslint-disable: no-useless-escape
+	t.is(fn({foo: 'bar', baz: 'bet'}, {quoteString: '\''}), 'foo=\'bar\' baz=\'bet\''); // eslint-disable-line no-useless-escape
 });
 
 test('ignores quoteString when quoteValues: false', t => {

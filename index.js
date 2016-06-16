@@ -1,4 +1,6 @@
 'use strict';
+var keys = Object.keys || require('object-keys');
+
 module.exports = function (obj, opts) {
 	if (typeof obj !== 'object' && !Array.isArray(obj)) {
 		throw new TypeError('obj-to-property-string expects an object');
@@ -6,7 +8,7 @@ module.exports = function (obj, opts) {
 
 	opts = opts || {};
 
-	if (opts.hasOwnProperty('spacer')) {
+	if ({}.hasOwnProperty.call(opts, 'spacer')) {
 		opts.spacer = opts.spacer.length === 0 ? '' : opts.spacer;
 	} else {
 		opts.spacer = ' ';
@@ -20,7 +22,7 @@ module.exports = function (obj, opts) {
 
 	var str = '';
 
-	Object.keys(obj).forEach(function (key, index, array) {
+	keys(obj).forEach(function (key, index, array) {
 		str += opts.quoteKeys ? opts.quoteString + key + opts.quoteString : key;
 		str += opts.assignment;
 		str += opts.quoteValues ? opts.quoteString : '';

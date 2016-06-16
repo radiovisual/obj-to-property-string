@@ -32,9 +32,11 @@
     "JavaScript",
     "convert"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "object-keys": "^1.0.9"
+  },
   "devDependencies": {
-    "ava": "^0.14.0",
-    "xo": "^0.15.0"
+    "ava": "*",
+    "xo": "*"
   }
 }
